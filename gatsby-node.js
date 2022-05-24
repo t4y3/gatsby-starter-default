@@ -3,7 +3,9 @@ exports.createPages = async ({ actions }) => {
   createPage({
     path: "/using-dsg",
     component: require.resolve("./src/templates/using-dsg.js"),
-    context: {},
+    context: {
+      time: Date.now()
+    },
     defer: true,
   })
 }
