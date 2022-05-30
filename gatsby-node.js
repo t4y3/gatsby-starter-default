@@ -4,7 +4,7 @@ exports.createPages = async ({ actions }) => {
     path: "/using-dsg",
     component: require.resolve("./src/templates/using-dsg.js"),
     context: {
-      time: Date.now()
+      time: new Date().toLocaleTimeString()
     },
     defer: true,
   })
