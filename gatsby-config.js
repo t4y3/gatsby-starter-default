@@ -37,6 +37,9 @@ module.exports = {
     {
       resolve:`gatsby-plugin-netlify`,
       options: {
+        allPageHeaders: [
+          'Cache-Control: private, max-age=0, must-revalidate'
+        ],
         headers: {
           '/using-dsg/*': [
             'Cache-Control: private, max-age=0, must-revalidate'
